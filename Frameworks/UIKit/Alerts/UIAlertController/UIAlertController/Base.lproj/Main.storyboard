@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIAlertController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gZ7-HJ-4JF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8p4-dJ-P1H">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="133.5"/>
+                                        <color key="backgroundColor" red="0.97067850828170776" green="0.69450461864471436" blue="0.58236175775527954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuH-Ck-bx9">
+                                        <rect key="frame" x="0.0" y="133.5" width="375" height="133.5"/>
+                                        <color key="backgroundColor" red="0.96572941541671753" green="0.44616925716400146" blue="0.50281864404678345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Alert Style">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alertBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hBD-Qp-Rp4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ed-Pb-8fa">
+                                        <rect key="frame" x="0.0" y="267" width="375" height="133"/>
+                                        <color key="backgroundColor" red="0.75107020139694214" green="0.42364382743835449" blue="0.51648253202438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Action Sheet Style">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionSheetBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhj-eM-3C9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6i-aH-Zen">
+                                        <rect key="frame" x="0.0" y="400" width="375" height="133.5"/>
+                                        <color key="backgroundColor" red="0.42463922500610352" green="0.35787907242774963" blue="0.48189622163772583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNE-Lq-xqg">
+                                        <rect key="frame" x="0.0" y="533.5" width="375" height="133.5"/>
+                                        <color key="backgroundColor" red="0.20910587906837463" green="0.3624444305896759" blue="0.49136215448379517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7ed-Pb-8fa" firstAttribute="width" secondItem="8p4-dJ-P1H" secondAttribute="width" id="3qo-MW-Ny0"/>
+                                    <constraint firstItem="WuH-Ck-bx9" firstAttribute="width" secondItem="8p4-dJ-P1H" secondAttribute="width" id="6gM-F8-d4V"/>
+                                    <constraint firstItem="m6i-aH-Zen" firstAttribute="height" secondItem="8p4-dJ-P1H" secondAttribute="height" id="LjZ-4A-8QJ"/>
+                                    <constraint firstItem="m6i-aH-Zen" firstAttribute="width" secondItem="8p4-dJ-P1H" secondAttribute="width" id="PjP-ax-irN"/>
+                                    <constraint firstItem="XNE-Lq-xqg" firstAttribute="width" secondItem="8p4-dJ-P1H" secondAttribute="width" id="RIP-kC-5hz"/>
+                                    <constraint firstItem="7ed-Pb-8fa" firstAttribute="height" secondItem="8p4-dJ-P1H" secondAttribute="height" id="Rkf-3k-tUb"/>
+                                    <constraint firstItem="WuH-Ck-bx9" firstAttribute="height" secondItem="8p4-dJ-P1H" secondAttribute="height" id="T9i-Is-X8u"/>
+                                    <constraint firstItem="XNE-Lq-xqg" firstAttribute="height" secondItem="8p4-dJ-P1H" secondAttribute="height" id="Yd2-Gm-TYk"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gZ7-HJ-4JF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5uQ-Cb-T1h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gZ7-HJ-4JF" secondAttribute="trailing" id="Qip-F7-msI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gZ7-HJ-4JF" secondAttribute="bottom" id="T8Q-GX-LiQ"/>
+                            <constraint firstItem="gZ7-HJ-4JF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bb8-c9-A0J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>

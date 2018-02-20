@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIActivityIndicatorView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mSs-oV-9Vh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ck9-SL-WDN">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xc6-2E-BJY">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="100"/>
+                                        <color key="backgroundColor" red="0.20348614454269409" green="0.67241454124450684" blue="0.63304996490478516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5BI-6t-Lmj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNP-Vl-b9t">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="100"/>
+                                        <color key="backgroundColor" red="0.20799869298934937" green="0.31778982281684875" blue="0.33080530166625977" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <state key="normal" title="Stop">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stopBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kma-qB-eiQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jNP-Vl-b9t" firstAttribute="width" secondItem="xc6-2E-BJY" secondAttribute="width" id="GZh-ok-2fv"/>
+                                    <constraint firstItem="jNP-Vl-b9t" firstAttribute="height" secondItem="xc6-2E-BJY" secondAttribute="height" id="OWU-fh-zGK"/>
+                                    <constraint firstAttribute="height" constant="100" id="v2A-1y-9OL"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity Indicator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hHN-lH-s6u">
+                                <rect key="frame" x="39.5" y="62" width="296" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <color key="textColor" red="0.93715304136276245" green="0.93731355667114258" blue="0.93714290857315063" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mSs-oV-9Vh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0aY-Vb-PEC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hHN-lH-s6u" secondAttribute="trailing" constant="39.5" id="7Z5-dS-9Vz"/>
+                            <constraint firstItem="mSs-oV-9Vh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="K8z-nF-enc"/>
+                            <constraint firstItem="hHN-lH-s6u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="KVZ-eS-jkK"/>
+                            <constraint firstItem="hHN-lH-s6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39.5" id="XXi-AR-bGU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ck9-SL-WDN" secondAttribute="trailing" id="lZZ-00-AKN"/>
+                            <constraint firstItem="Ck9-SL-WDN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qI7-aX-B7u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ck9-SL-WDN" secondAttribute="bottom" id="qYq-OC-C6p"/>
+                            <constraint firstItem="mSs-oV-9Vh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uTC-KJ-0Vc"/>
+                            <constraint firstItem="mSs-oV-9Vh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yva-A2-K1V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
