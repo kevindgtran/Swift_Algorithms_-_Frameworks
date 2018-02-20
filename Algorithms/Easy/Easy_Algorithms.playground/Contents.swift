@@ -31,5 +31,48 @@ func numJewelsInStones(_ J: String, _ S: String) -> Int {
 }
  */
 
+/*
+Judge Route Circle
+Initially, there is a Robot at position (0, 0). Given a sequence of its moves, judge if this robot makes a circle, which means it moves back to the original place.
 
+The move sequence is represented by a string. And each move is represent by a character. The valid robot moves are R (Right), L (Left), U (Up) and D (down). The output should be true or false representing whether the robot makes a circle.
 
+func judgeCircle(_ moves: String) -> Bool {
+    var UCount: Int = 0
+    var DCount: Int = 0
+    var LCount: Int = 0
+    var RCount: Int = 0
+    
+    for letter in moves {
+        
+        switch letter {
+        case "U":
+            UCount += 1
+        case "D":
+            DCount += 1
+        case "L":
+            LCount += 1
+        case "R":
+            RCount += 1
+        default:
+            return false
+        }
+    }
+    
+    if UCount == DCount && LCount == RCount {
+        return true
+    } else {
+        return false
+    }
+}
+*/
+
+/*
+Write a function that takes a string as input and returns the string reversed.
+Example:
+Given s = "hello", return "olleh".
+
+func reverseString(_ s: String) -> String {
+    return String(s.reversed())
+}
+ */
