@@ -76,3 +76,20 @@ func reverseString(_ s: String) -> String {
     return String(s.reversed())
 }
  */
+
+/*
+func mergeArrays(_ arr1: [Int], _ arr2: [Int]) -> [Int] {
+    let combinedArr = arr1 + arr2
+    
+    let sortedArray = combinedArr.sorted { (value1: Int, value2: Int) -> Bool in
+        return value1 < value2
+    }
+    
+    return sortedArray
+}
+
+let arrOne = [1,3,5]
+let arrTwo = [2,4,6,8,10]
+
+mergeArrays(arrOne, arrTwo)
+*/
