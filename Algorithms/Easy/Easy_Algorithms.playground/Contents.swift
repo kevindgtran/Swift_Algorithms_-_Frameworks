@@ -93,3 +93,34 @@ let arrTwo = [2,4,6,8,10]
 
 mergeArrays(arrOne, arrTwo)
 */
+
+/*
+func playersScores(_ array1: [Int], _ array2: [Int]) -> (one: Int, two: Int) {
+    var player1Sum: Int = 0
+    var player2Sum: Int = 0
+    
+    for i in 0..<array1.count {
+        
+        if array1[i] == array2[i] {
+            
+        }
+        
+        if array1[i] > array2[i] {
+            player1Sum += 1
+        }
+        
+        if array1[i] < array2[i] {
+            player2Sum += 1
+        }
+        
+    }
+    
+    return (player1Sum, player2Sum)
+    
+}
+
+let player1Scores = [90,100,93]
+let player2Scores = [89,100,78]
+
+playersScores(player1Scores, player2Scores)
+*/
